@@ -65,7 +65,7 @@ const JobList = () => {
 
       console.log(decoded.username);
 
-      const response = await fetch('http://localhost:5000/api/save-job', {
+      const response = await fetch('https://jobsearch-backend-1.onrender.com/api/save-job', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
