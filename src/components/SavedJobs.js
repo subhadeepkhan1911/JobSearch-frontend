@@ -12,7 +12,7 @@ const SavedJobs = () => {
       const token = localStorage.getItem('token');
 
       try {
-        const response = await fetch('http://localhost:5000/api/saved-jobs', {
+        const response = await fetch('https://jobsearch-backend-1.onrender.com/api/saved-jobs', {
           method: 'GET',
           headers: {
             'Content-Type': 'application/json',
@@ -39,7 +39,7 @@ const SavedJobs = () => {
     const token = localStorage.getItem('token');
 
     try {
-      const response = await fetch(`http://localhost:5000/api/saved-jobs/${jobId}`, {
+      const response = await fetch(`https://jobsearch-backend-1.onrender.com/api/saved-jobs/${jobId}`, {
         method: 'DELETE',
         headers: {
           'Content-Type': 'application/json',
